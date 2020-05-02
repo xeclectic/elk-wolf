@@ -2,40 +2,35 @@
   <div>
     <!-- header images -->
     <section class="zoom">
-        <img id="logo-text" src="https://66.media.tumblr.com/5c03e5cb678297fc76f2040816b372a4/22674703c4808015-f0/s640x960/74b99aea6ca5124ab2b1e781f6099c9ddddb0689.png" alt="logo text">
-        <img id="tree-left"  src="https://66.media.tumblr.com/5bab565be890515d4fab33a6927e1f9a/e8a43a089cad3ad1-2b/s400x600/789d44d05abfb1d132135479c630fd535b26b1c4.png" alt="rider">
-        <img id="tree-right"  src="https://66.media.tumblr.com/8eb32ed91cf03c5e51a358e86ab07a32/e8a43a089cad3ad1-9d/s1280x1920/4245917b79a2bb87b24a7fec5964fcae2139637e.png" alt="horse">
+        <img id="logo-text" class="responsive-img" src="https://66.media.tumblr.com/5c03e5cb678297fc76f2040816b372a4/22674703c4808015-f0/s640x960/74b99aea6ca5124ab2b1e781f6099c9ddddb0689.png" alt="logo text">
+        <!-- <img id="tree-left" class="responsive-img" src="https://66.media.tumblr.com/5bab565be890515d4fab33a6927e1f9a/e8a43a089cad3ad1-2b/s400x600/789d44d05abfb1d132135479c630fd535b26b1c4.png" alt="rider">
+        <img id="tree-right" class="responsive-img" src="https://66.media.tumblr.com/8eb32ed91cf03c5e51a358e86ab07a32/e8a43a089cad3ad1-9d/s1280x1920/4245917b79a2bb87b24a7fec5964fcae2139637e.png" alt="horse"> -->
     </section>
     <section>
         <!-- header links -->
     <div class="row">
-      <div class="col s2 m2 l2 right-align">
-        <a class="link-color" href="#link-aboutUs">About Us</a>
+      <div class="col s2 m2 l2 center-align">
+        <a class="link-color" href="#">About Us</a>
       </div>
 
-      <div class="col s2 m2 l2 right-align">
-        <a class="link-color" href="#connect-banner">Blog</a>
+      <div class="col s1 m1 l1 center-align">
+        <a class="link-color" href="#">Posts</a>
       </div>
 
-      <div class="col s6 m4 l5 right-align">
-        <a class="link-color" href="#feature-banner">Photography</a>
+      <div class="col s1 m1 l1 right-align">
+        <a class="link-color" href="#">Contacts</a>
       </div>
 
-      <div class="col s2 m2 l2 right-align">
+      <div class="col s7 m7 l7 right-align">
         <a class="link-color" href="#">Shop</a>
       </div>
-      <div>
-          <p>A good horse will change your life. Truly great ones define it.</p>
+      <div id="header-banner">
+          <img id="banner-logo" class="responsive-img" src="https://66.media.tumblr.com/9c196dfe5f1a07bcded480cec6412386/d2c643bb508b2b27-7a/s250x400/fb633f808c6cadc93bd66305f16bfe363eb4c445.png" alt="timber-ranch">
       </div>
+      <!-- social icons -->
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
       </div>
-    </section>
-    <section class="content">
-        <h2> this is the header for content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis sed odio morbi quis commodo. Est velit egestas dui id ornare. Dignissim suspendisse in est ante in nibh. Quis blandit turpis cursus in hac habitasse platea dictumst. Quis vel eros donec ac odio tempor orci dapibus ultrices. Ut eu sem integer vitae justo eget. Dapibus ultrices in iaculis nunc sed. Nisl purus in mollis nunc sed id. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Pellentesque habitant morbi tristique senectus et netus. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat.
-
-Pretium viverra suspendisse potenti nullam ac. Molestie at elementum eu facilisis sed. In metus vulputate eu scelerisque felis imperdiet proin. Lacinia at quis risus sed vulputate odio ut. Odio ut enim blandit volutpat. Consequat id porta nibh venenatis. Augue lacus viverra vitae congue eu. Eu facilisis sed odio morbi quis. Pellentesque habitant morbi tristique senectus et. Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Non enim praesent elementum facilisis leo. Malesuada fames ac turpis egestas sed. Turpis massa sed elementum tempus egestas. Blandit cursus risus at ultrices mi tempus. Pretium viverra suspendisse potenti nullam. Arcu ac tortor dignissim convallis. Arcu non sodales neque sodales ut etiam. Nulla pellentesque dignissim enim sit. Quam lacus suspendisse faucibus interdum posuere.
-
-Vel quam elementum pulvinar etiam non quam lacus suspendisse. Parturient montes nascetur ridiculus mus mauris. Aenean et tortor at risus viverra adipiscing at in. Porttitor rhoncus dolor purus non. Maecenas sed enim ut sem viverra aliquet eget sit amet. Aenean sed adipiscing diam donec adipiscing tristique risus. Nisi scelerisque eu ultrices vitae auctor eu augue. Non tellus orci ac auctor augue mauris augue. Nulla pellentesque dignissim enim sit amet venenatis. Auctor eu augue ut lectus arcu bibendum at varius. Commodo viverra maecenas accumsan lacus vel facilisis volutpat. In iaculis nunc sed augue lacus viverra vitae congue. Convallis a cras semper auctor neque vitae tempus quam. Sem viverra aliquet eget sit. Elementum integer enim neque volutpat ac. Porttitor lacus luctus accumsan tortor posuere ac. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Dignissim cras tincidunt lobortis feugiat. Semper risus in hendrerit gravida rutrum quisque non. Integer feugiat scelerisque varius morbi.</p>
     </section>
 </div>
 </template>
@@ -77,6 +72,7 @@ export default {
         padding: 0;
     }
 
+    /* back image header */
     .zoom{
         width: 110%;
         height: 1000px;
@@ -93,10 +89,19 @@ export default {
         width: 100%;
         height:200px;
         z-index: 1000;
-        background: linear-gradient(transparent, #222222)
+        background: linear-gradient(transparent, #1B262D)
     }
 
     /* parallax images */
+
+    #logo-text{
+        position: absolute;
+        top: 0;
+        right: 33vw;
+        width: 50%;
+        opacity: 0.9;
+    }
+
     #tree-left{
         position: absolute;
         top: 0;
@@ -112,11 +117,55 @@ export default {
         width: 65%;
     }
 
-    #logo-text{
-        position: absolute;
-        top: 0;
-        right: 33vw;
-        width: 50%;
+    /* Header banner */
+
+    #header-banner{
+        background-color:#1B262D;
+        width: 100%;
+        height: 30vh;
     }
 
+    #banner-logo{
+        position: sticky;
+        width: 300px;
+        height: 350px;
+        left: 37vw;
+    }
+    .row{
+        position: sticky;
+        bottom: 30vh;
+    }
+
+    /* social media icons */
+.fa {
+    position: relative;
+  padding: 20px;
+  font-size: 30px;
+  bottom: 15vh;
+  left: 20vw;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+    .fa-youtube {
+  background: #1B262D;
+  color: white;
+  left: 10vh;
+}
+
+.fa-instagram {
+  background: #1B262D;
+  color: white;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    #tree-left {
+        display: none;
+    }
+    #tree-right {
+        display: none;
+    }
+}
 </style>

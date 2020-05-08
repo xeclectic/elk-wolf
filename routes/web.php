@@ -18,5 +18,13 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/backend', 'HomeController@index')->name('admin');
+Route::get('/postsPage', 'postsController@show');
+
+//create Post
+Route::post('/create', 'makePostController@makePost');
+
+//image route
+Route::post('upload', 'imageController@upload')->name('upload');
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -10,19 +10,19 @@
         <!-- header links -->
     <div class="row">
       <div class="col s2 m2 l2 center-align">
-        <a class="link-color" href="#">About Us</a>
+        <a class="link-color" href="/aboutUs">About Us</a>
       </div>
 
       <div class="col s1 m1 l1 center-align">
-        <a class="link-color" href="#">Posts</a>
+        <a class="link-color" href="/posts">Posts</a>
       </div>
 
       <div class="col s1 m1 l1 right-align">
-        <a class="link-color" href="#">Contacts</a>
+        <a class="link-color" href="/contact">Contacts</a>
       </div>
 
       <div class="col s7 m7 l7 right-align">
-        <a class="link-color" href="#">Shop</a>
+        <a class="link-color" href="/photography">Photography</a>
       </div>
       <div id="header-banner">
           <img id="banner-logo" class="responsive-img" src="https://66.media.tumblr.com/9c196dfe5f1a07bcded480cec6412386/d2c643bb508b2b27-7a/s250x400/fb633f808c6cadc93bd66305f16bfe363eb4c445.png" alt="timber-ranch">

@@ -9,9 +9,15 @@ class makePostController extends Controller
 {
     function makePost(Request $request) {
         if(Auth::check()){
-            $posts = new \App\Posts;
+            error_log("logged in");
+            if($request->hasFile('image')){
+                error_log("image uploaded");
+                $imagename = $request->image->getClientOriginalName();
+                $request->image->storeAs('public', $imagename);
+
+                $posts = new \App\Posts;
             $posts->user_id = $request->id;
-            $posts->image = $request->image;
+            $posts->image = $imagename;
             $posts->title = $request->title;
             $posts->body = $request->body;
 
@@ -19,6 +25,7 @@ class makePostController extends Controller
             $posts->save();
 
             return redirect('/backend');
+            }
         }
     }
 }

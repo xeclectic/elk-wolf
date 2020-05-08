@@ -86,12 +86,11 @@
                 @endforeach
                 @endif
 
-            <form action="/create" method="post">
+            <form action="/create" method="post" enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="id" value={{Auth::user()->id}}>
                 <br>
                 <input type="file" name="image" value="image">
-            <img src="/storage/{{auth()->user()->image}}" alt="Image">
                 <br>
                 <input type="text" name="title" value="Title">
                 <br>
@@ -99,23 +98,9 @@
                 <br>
                 <button type="submit" name="addPost" value="Upload"> Upload</button>
             </form>
-
-            {{-- upload image form
-                {{-- error
-            @if(count($errors))
-                @foreach($errors->all() as $error)
-                <span class="text-danger">{{$error}} </span>
-                @endforeach
-                @endif
-
-        {{-- if all is good
-            <form action="{{route('upload')}}" enctype="multipart/form-data" method="post">
-                @csrf
-                <input type="file" name="image">
-                <img src="/storage/image.jpeg" alt="Image">
-                <input type="submit" value="upload"> --}}
         </div>
         @foreach ($post as $posts)
+        <img src="/storage/{{ $posts->image }}">
             <p>{{ $posts->title }}</p>
             <p>{{ $posts->body }}</p>
         @endforeach

@@ -2048,64 +2048,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "mainContent"
+  data: function data() {
+    return {
+      posts: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get("/pagePosts").then(function (response) {
+      console.log(response);
+      _this.posts = response.data.posts;
+    });
+  }
 });
 
 /***/ }),
@@ -6691,7 +6647,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  /* Post cards */\n#cardOne[data-v-6bc89785]{\n  width: 400px;\n  height: 400px;\n}\n#cardTwo[data-v-6bc89785]{\n  width: 400px;\n  height: 400px;\n}\n#cardThree[data-v-6bc89785]{\n  width: 400px;\n  height: 400px;\n}\n#cardFour[data-v-6bc89785]{\n  width: 400px;\n  height: 400px;\n}\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Post cards */\n#cardOne[data-v-6bc89785] {\n  width: 400px;\n  height: 400px;\n}\n#cardTwo[data-v-6bc89785] {\n  width: 400px;\n  height: 400px;\n}\n#cardThree[data-v-6bc89785] {\n  width: 400px;\n  height: 400px;\n}\n#cardFour[data-v-6bc89785] {\n  width: 400px;\n  height: 400px;\n}\n", ""]);
 
 // exports
 
@@ -38658,124 +38614,21 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col s12 m7", attrs: { id: "cardOne" } }, [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-image" }, [
-            _c("img", {
-              attrs: {
-                src:
-                  "https://66.media.tumblr.com/823260efcba4792eac4494f0d2b0812c/435c690623860034-86/s1280x1920/c1a858534c66bdd75b5255b41c07dd245b379e8f.jpg"
-              }
-            }),
-            _vm._v(" "),
-            _c("span", { staticClass: "card-title" }, [_vm._v("Card Title")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-content" }, [
-            _c("p", [
-              _vm._v(
-                "These will be featured blog titles. upon click will take you to that blog page"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-action" }, [
-            _c("a", { attrs: { href: "#" } }, [_vm._v("This is a link")])
-          ])
-        ]),
+  return _c(
+    "div",
+    _vm._l(_vm.posts, function(post) {
+      return _c("div", { key: post.id }, [
+        _c("img", { attrs: { src: "post.image" } }),
         _vm._v(" "),
-        _c("div", { staticClass: "col s12 m7", attrs: { id: "cardTwo" } }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-image" }, [
-              _c("img", {
-                attrs: {
-                  src:
-                    "https://66.media.tumblr.com/823260efcba4792eac4494f0d2b0812c/435c690623860034-86/s1280x1920/c1a858534c66bdd75b5255b41c07dd245b379e8f.jpg"
-                }
-              }),
-              _vm._v(" "),
-              _c("span", { staticClass: "card-title" }, [_vm._v("Card Title")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-content" }, [
-              _c("p", [
-                _vm._v(
-                  "These will be featured blog titles. upon click will take you to that blog page"
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-action" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("This is a link")])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col s12 m7", attrs: { id: "cardThree" } }, [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-image" }, [
-            _c("img", {
-              attrs: {
-                src:
-                  "https://66.media.tumblr.com/823260efcba4792eac4494f0d2b0812c/435c690623860034-86/s1280x1920/c1a858534c66bdd75b5255b41c07dd245b379e8f.jpg"
-              }
-            }),
-            _vm._v(" "),
-            _c("span", { staticClass: "card-title" }, [_vm._v("Card Title")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-content" }, [
-            _c("p", [
-              _vm._v(
-                "These will be featured blog titles. upon click will take you to that blog page"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-action" }, [
-            _c("a", { attrs: { href: "#" } }, [_vm._v("This is a link")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col s12 m7", attrs: { id: "cardFour" } }, [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-image" }, [
-            _c("img", {
-              attrs: {
-                src:
-                  "https://66.media.tumblr.com/823260efcba4792eac4494f0d2b0812c/435c690623860034-86/s1280x1920/c1a858534c66bdd75b5255b41c07dd245b379e8f.jpg"
-              }
-            }),
-            _vm._v(" "),
-            _c("span", { staticClass: "card-title" }, [_vm._v("Big Ben")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-content" }, [
-            _c("p", [
-              _vm._v(
-                "These will be featured blog titles. upon click will take you to that blog page"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-action" }, [
-            _c("a", { attrs: { href: "#" } }, [_vm._v("This is a link")])
-          ])
-        ])
+        _c("p", [_vm._v(_vm._s(post.title))]),
+        _vm._v(" "),
+        _c("p", [_vm._v(_vm._s(post.body))])
       ])
-    ])
-  }
-]
+    }),
+    0
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

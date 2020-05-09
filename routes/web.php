@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/backend', 'HomeController@index')->name('admin');
 Route::get('/postsPage', 'postsController@show');
+Route::get('/pagePosts', 'frontPostsController@getPosts');
 
 //create Post
 Route::post('/create', 'makePostController@makePost');

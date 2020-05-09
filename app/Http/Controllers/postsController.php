@@ -11,4 +11,5 @@ class postsController extends Controller
         $post=\App\Posts::all();
         return view('home', ['post' => $post]);
     }
+
 }

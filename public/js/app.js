@@ -2057,6 +2057,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -6656,7 +6660,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Post cards */\n.card[data-v-6bc89785] {\n  width: 450px;\n  height: 500px;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Post cards */\n.card[data-v-6bc89785] {\n  width: 450px;\n  height: 500px;\n}\n", ""]);
 
 // exports
 
@@ -38623,29 +38627,31 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c(
-      "div",
-      { staticClass: "col s12 m7" },
-      _vm._l(_vm.posts, function(post) {
-        return _c("div", { key: post.id, staticClass: "card" }, [
-          _c("div", { staticClass: "card-image" }, [
-            _c("img", { attrs: { src: "/storage/" + post.image } }),
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col s12 m7" },
+        _vm._l(_vm.posts, function(post) {
+          return _c("div", { key: post.id, staticClass: "card" }, [
+            _c("div", { staticClass: "card-image" }, [
+              _c("img", { attrs: { src: "/storage/" + post.image } }),
+              _vm._v(" "),
+              _c("span", { staticClass: "card-title" }, [
+                _vm._v(_vm._s(post.title))
+              ])
+            ]),
             _vm._v(" "),
-            _c("span", { staticClass: "card-title" }, [
-              _vm._v(_vm._s(post.title))
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-content" }, [
-            _c("p", [_vm._v(_vm._s(post.body))])
-          ]),
-          _vm._v(" "),
-          _vm._m(0, true)
-        ])
-      }),
-      0
-    )
+            _c("div", { staticClass: "card-content" }, [
+              _c("p", [_vm._v(_vm._s(post.body))])
+            ]),
+            _vm._v(" "),
+            _vm._m(0, true)
+          ])
+        }),
+        0
+      )
+    ])
   ])
 }
 var staticRenderFns = [
@@ -50847,6 +50853,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('Root', __webpack_require__(/*! ./components/Root.vue */ "./resources/js/components/Root.vue")["default"]);
+Vue.component('Editor', __webpack_require__(/*! ./components/textEditor.vue */ "./resources/js/components/textEditor.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -51231,6 +51238,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_mainContent_vue_vue_type_template_id_6bc89785_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/components/textEditor.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/textEditor.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/vue-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/projects/M.V.P/resources/js/components/textEditor.vue'");
 
 /***/ }),
 

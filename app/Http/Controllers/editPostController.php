@@ -14,12 +14,14 @@ class editPostController extends Controller
             return view('editPosts', ['post' => $post]);
         }
     }
-    public function updateTweet(Request $request, $id){
+    public function updatePost(Request $request, $id){
         if(Auth::check()){
             $posts=\App\Posts::find($id);
             $posts->user_id = $request->id;
             $posts->title = $request->title;
             $posts->body = $request->body;
+
+            $posts->save();
 
             return redirect('/home');
         }

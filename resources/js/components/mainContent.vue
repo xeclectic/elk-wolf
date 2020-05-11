@@ -1,5 +1,9 @@
 <template>
-<div class="row">
+<div>
+
+  <!-- Search bar -->
+
+  <div class="row">
     <div class="col s12 m7">
       <div v-for="post in posts" v-bind:key="post.id" class="card">
         <div class="card-image">
@@ -14,7 +18,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div></div>
 </template>
 
 

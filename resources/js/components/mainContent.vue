@@ -1,10 +1,19 @@
 <template>
-  <div>
-    <div v-for="post in posts" v-bind:key="post.id">
-        <img src="post.image">
-        <p>{{post.title}}</p>
-        <p>{{post.body}}</p>
+<div class="row">
+    <div class="col s12 m7">
+      <div v-for="post in posts" v-bind:key="post.id" class="card">
+        <div class="card-image">
+          <img v-bind:src="'/storage/'+ post.image" />
+          <span class="card-title">{{post.title}}</span>
         </div>
+        <div class="card-content">
+          <p>{{post.body}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -12,7 +21,7 @@
 <script>
 export default {
   data: function() {
-    return {posts: []}
+    return { posts: [] };
   },
 
   mounted() {
@@ -26,23 +35,8 @@ export default {
 
 <style scoped>
 /* Post cards */
-#cardOne {
-  width: 400px;
-  height: 400px;
-}
-
-#cardTwo {
-  width: 400px;
-  height: 400px;
-}
-
-#cardThree {
-  width: 400px;
-  height: 400px;
-}
-
-#cardFour {
-  width: 400px;
-  height: 400px;
+.card {
+  width: 450px;
+  height: 500px;
 }
 </style>

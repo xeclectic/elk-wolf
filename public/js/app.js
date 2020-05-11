@@ -2048,6 +2048,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -6647,7 +6656,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Post cards */\n#cardOne[data-v-6bc89785] {\n  width: 400px;\n  height: 400px;\n}\n#cardTwo[data-v-6bc89785] {\n  width: 400px;\n  height: 400px;\n}\n#cardThree[data-v-6bc89785] {\n  width: 400px;\n  height: 400px;\n}\n#cardFour[data-v-6bc89785] {\n  width: 400px;\n  height: 400px;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Post cards */\n.card[data-v-6bc89785] {\n  width: 450px;\n  height: 500px;\n}\n", ""]);
 
 // exports
 
@@ -38614,21 +38623,41 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    _vm._l(_vm.posts, function(post) {
-      return _c("div", { key: post.id }, [
-        _c("img", { attrs: { src: "post.image" } }),
-        _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(post.title))]),
-        _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(post.body))])
-      ])
-    }),
-    0
-  )
+  return _c("div", { staticClass: "row" }, [
+    _c(
+      "div",
+      { staticClass: "col s12 m7" },
+      _vm._l(_vm.posts, function(post) {
+        return _c("div", { key: post.id, staticClass: "card" }, [
+          _c("div", { staticClass: "card-image" }, [
+            _c("img", { attrs: { src: "/storage/" + post.image } }),
+            _vm._v(" "),
+            _c("span", { staticClass: "card-title" }, [
+              _vm._v(_vm._s(post.title))
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-content" }, [
+            _c("p", [_vm._v(_vm._s(post.body))])
+          ]),
+          _vm._v(" "),
+          _vm._m(0, true)
+        ])
+      }),
+      0
+    )
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-action" }, [
+      _c("a", { attrs: { href: "#" } }, [_vm._v("This is a link")])
+    ])
+  }
+]
 render._withStripped = true
 
 

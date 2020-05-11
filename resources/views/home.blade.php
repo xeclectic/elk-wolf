@@ -103,6 +103,8 @@
         <img src="/storage/{{ $posts->image }}">
             <p>{{ $posts->title }}</p>
             <p>{{ $posts->body }}</p>
+            <a href='/editPosts/{{$posts->id}}'>Edit</a><br>
+            <a href='/delete/{{$posts->id}}'>Delete</a><br>
         @endforeach
     </div>
 </div>

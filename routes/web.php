@@ -28,4 +28,8 @@ Route::post('/create', 'makePostController@makePost');
 //image route
 Route::post('upload', 'imageController@upload')->name('upload');
 
+//Edit Post
+Route::get('/editPosts/{id}', 'editPostController@editPost');
+Route::post('/updatePost/{id}', 'editPostController@updatePost');
+
 Route::get('/home', 'HomeController@index')->name('home');

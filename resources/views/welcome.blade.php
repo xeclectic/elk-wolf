@@ -44,4 +44,6 @@
     <script src="{{ asset('js/app.js') }}"></script>
     {{-- materialize --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {{-- share this --}}
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5eba10346fa8080012c687aa&product=inline-share-buttons" async="async"></script>
 </html>

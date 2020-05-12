@@ -17,6 +17,7 @@ class makePostController extends Controller
             $posts->user_id = $request->id;
             $posts->image = $imagename;
             $posts->title = $request->title;
+            $posts->description = $request->description;
             $posts->body = $request->body;
 
 

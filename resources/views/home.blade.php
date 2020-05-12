@@ -94,6 +94,8 @@
                 <br>
                 <input type="text" name="title" value="Title">
                 <br>
+                <input type="text" name="description" value="Description">
+                <br>
                 <input type="text" name="body" value="Post Body">
                 <br>
                 <button type="submit" name="addPost" value="Upload"> Upload</button>

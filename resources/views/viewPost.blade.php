@@ -8,8 +8,9 @@
 </head>
 <body>
     <img src="/storage/{{ $post->image }}">
-            <p>{{ $post->title }}</p>
+            <h2>{{ $post->title }}</h2>
             <p>{{ $post->body }}</p>
+            <div class="sharethis-inline-share-buttons"></div>
 
 </body>
 </html>

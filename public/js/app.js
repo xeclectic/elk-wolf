@@ -2059,11 +2059,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       posts: []
     };
+  },
+  getters: {
+    products: function products(state) {
+      return state.products.slice().reverse();
+    }
   },
   mounted: function mounted() {
     var _this = this;
@@ -2072,6 +2078,11 @@ __webpack_require__.r(__webpack_exports__);
       console.log(response);
       _this.posts = response.data.posts;
     });
+  },
+  computed: {
+    products: function products() {
+      return this.$store.getters.products;
+    }
   }
 });
 
@@ -2096,12 +2107,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "posts",
   data: function data() {
     return {
-      posts: []
+      posts: [],
+      search: ''
     };
+  },
+  getters: {
+    products: function products(state) {
+      return state.products.slice().reverse();
+    }
   },
   mounted: function mounted() {
     var _this = this;
@@ -2110,6 +2129,18 @@ __webpack_require__.r(__webpack_exports__);
       console.log(response);
       _this.posts = response.data.posts;
     });
+  },
+  computed: {
+    filteredPosts: function filteredPosts() {
+      var _this2 = this;
+
+      return this.posts.filter(function (post) {
+        return post.title.match(_this2.search);
+      });
+    },
+    products: function products() {
+      return this.$store.getters.products;
+    }
   }
 });
 
@@ -6696,7 +6727,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Post cards */\n.card[data-v-6bc89785] {\n  width: 450px;\n  height: 500px;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Post cards */\n.card[data-v-6bc89785] {\n  width: 450px;\n  height: 500px;\n}\n", ""]);
 
 // exports
 
@@ -38664,28 +38695,30 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "row", attrs: { id: "row" } }, [
       _c(
         "div",
         { staticClass: "col s12 m7" },
-        _vm._l(_vm.posts, function(post) {
+        _vm._l(_vm.posts.slice().reverse(), function(post) {
           return _c("div", { key: post.id, staticClass: "card" }, [
             _c("div", { staticClass: "card-image" }, [
-              _c("img", { attrs: { src: "/storage/" + post.image } }),
-              _vm._v(" "),
-              _c("span", { staticClass: "card-title" }, [
-                _vm._v(_vm._s(post.title))
-              ])
+              _c("img", { attrs: { src: "/storage/" + post.image } })
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-content" }, [
-              _c("p", [_vm._v(_vm._s(post.body))])
+              _c("h1", { staticClass: "card-title" }, [
+                _vm._v(_vm._s(post.title))
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(post.description))])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-action" }, [
               _c("a", { attrs: { href: "/viewPost/" + post.id } }, [
                 _vm._v("Read More")
-              ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "sharethis-inline-share-buttons" })
             ])
           ])
         }),
@@ -38718,16 +38751,40 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    _vm._l(_vm.posts, function(post) {
-      return _c("div", { key: post.id }, [
-        _c("img", { attrs: { src: "/storage/" + post.image } }),
-        _vm._v(" "),
-        _c("h2", [_vm._v(_vm._s(post.title))]),
-        _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(post.body))])
-      ])
-    }),
-    0
+    { attrs: { id: "postContainer" } },
+    [
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.search,
+            expression: "search"
+          }
+        ],
+        attrs: { type: "text", placeholder: "search blogs" },
+        domProps: { value: _vm.search },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.search = $event.target.value
+          }
+        }
+      }),
+      _vm._v(" "),
+      _vm._l(_vm.filteredPosts.slice().reverse(), function(post) {
+        return _c("div", { key: post.id, attrs: { id: "Posts" } }, [
+          _c("img", { attrs: { src: "/storage/" + post.image } }),
+          _vm._v(" "),
+          _c("h2", [_vm._v(_vm._s(post.title))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(post.body))])
+        ])
+      })
+    ],
+    2
   )
 }
 var staticRenderFns = []

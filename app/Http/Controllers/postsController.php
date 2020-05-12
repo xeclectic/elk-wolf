@@ -11,5 +11,8 @@ class postsController extends Controller
         $post=\App\Posts::all();
         return view('home', ['post' => $post]);
     }
-
+    public function viewPost(Request $request, $id){
+        $post=\App\Posts::find($id);
+        return view('viewPost', ['post' => $post]);
+    }
 }

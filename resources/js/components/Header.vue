@@ -14,7 +14,7 @@
       </div>
 
       <div class="col s1 m1 l1 center-align">
-        <a class="link-color" href="/posts">Posts</a>
+        <a class="link-color" href="/posts">Blog Posts</a>
       </div>
 
       <div class="col s1 m1 l1 right-align">

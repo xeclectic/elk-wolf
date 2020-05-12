@@ -1,8 +1,6 @@
 <template>
 <div>
 
-  <!-- Search bar -->
-
   <div class="row">
     <div class="col s12 m7">
       <div v-for="post in posts" v-bind:key="post.id" class="card">
@@ -14,7 +12,7 @@
           <p>{{post.body}}</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a v-bind:href="'/viewPost/' + post.id">Read More</a>
         </div>
       </div>
     </div>

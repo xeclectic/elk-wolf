@@ -16,11 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/posts', function () {
+    return view('posts');
+});
 
 Auth::routes();
 Route::get('/backend', 'HomeController@index')->name('admin');
 Route::get('/postsPage', 'postsController@show');
 Route::get('/pagePosts', 'frontPostsController@getPosts');
+Route::get('/viewPost/{id}', 'postsController@viewPost');
 
 //create Post
 Route::post('/create', 'makePostController@makePost');
@@ -31,5 +35,8 @@ Route::post('upload', 'imageController@upload')->name('upload');
 //Edit Post
 Route::get('/editPosts/{id}', 'editPostController@editPost');
 Route::post('/updatePost/{id}', 'editPostController@updatePost');
+
+//Delete Post
+Route::get('delete/{id}', 'deletePostController@deletePost');
 
 Route::get('/home', 'HomeController@index')->name('home');

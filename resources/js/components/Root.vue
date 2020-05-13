@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Header />
+        <Header class="header" />
         <mainContent />
         <Footer />
     </div>
@@ -22,5 +22,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

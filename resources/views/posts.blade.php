@@ -8,6 +8,11 @@
         {{-- materialize --}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </head>
+    <style>
+        body{
+            background: #f7f7ef;
+        }
+        </style>
     <body>
         <div id="app">
             <posts />
